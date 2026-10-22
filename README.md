@@ -152,6 +152,9 @@ Jest coverage. ESLint allows **zero warnings**. Coverage includes every authored
 production TS/TSX file in `app/` and `src/`, including routes; only tests and type
 declarations are excluded. All four global thresholds are **100%**.
 
+GitHub Actions runs `npm ci` and `npm run verify` on pull requests and pushes to
+`main`. The workflow uses the Node version in `.nvmrc` and caches npm downloads.
+
 Jest/RNTL exercise domain operations, runtime schemas, routes and query mutations.
 Native media/storage boundaries are mocked. Tests cover access denial, price
 changes, duplicate/lost confirmations, stale generation and hydration races,
