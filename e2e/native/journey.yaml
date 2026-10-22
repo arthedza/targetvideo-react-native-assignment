@@ -1,0 +1,109 @@
+appId: host.exp.Exponent
+---
+- launchApp
+- openLink: ${EXPO_URL}
+- extendedWaitUntil:
+    visible: DramaFlash
+    timeout: 60000
+- scrollUntilVisible:
+    element: Reset demo
+    direction: DOWN
+    timeout: 60000
+    visibilityPercentage: 80
+- tapOn: Reset demo
+- scrollUntilVisible:
+    element: Watch now
+    direction: UP
+    centerElement: true
+- waitForAnimationToEnd
+- takeScreenshot: home
+- tapOn: Watch now
+- assertVisible: Synopsis
+- scrollUntilVisible:
+    element: 'Watch demo cliffhanger \(Ep 3\)'
+    direction: DOWN
+- waitForAnimationToEnd
+- takeScreenshot: details
+- tapOn: 'Watch demo cliffhanger \(Ep 3\)'
+- assertVisible: Episode 3
+- extendedWaitUntil:
+    visible: Pause
+    timeout: 15000
+- tapOn: Pause
+- assertVisible: Play
+- waitForAnimationToEnd
+- takeScreenshot: player
+- tapOn: Jump to last 2 seconds
+- extendedWaitUntil:
+    visible: To be continued…
+    timeout: 10000
+- takeScreenshot: cliffhanger
+- tapOn: Unlock Episode 4
+- assertVisible: 'Balance: 15 Coins'
+- assertVisible: 'Price: 10 Coins'
+- tapOn: Maybe Later
+- assertVisible: To be continued…
+- tapOn: Unlock Episode 4
+- scrollUntilVisible:
+    element: Unlock for 10 Coins
+    direction: DOWN
+- takeScreenshot: unlock
+- doubleTapOn: Unlock for 10 Coins
+- assertVisible: Episode 4
+- assertVisible: 5 Coins · Demo wallet
+- assertVisible: Pause
+- tapOn: Pause
+- assertVisible: Play
+- waitForAnimationToEnd
+- takeScreenshot: unlocked-player
+- stopApp
+- openLink: ${EXPO_URL}
+- extendedWaitUntil:
+    visible: DramaFlash
+    timeout: 60000
+- scrollUntilVisible:
+    element: 5 Coins · Demo wallet
+    direction: DOWN
+- assertVisible: 5 Coins · Demo wallet
+- tapOn: Home
+- scrollUntilVisible:
+    element: Watch now
+    direction: UP
+    centerElement: true
+- tapOn: Watch now
+- assertVisible: Synopsis
+- scrollUntilVisible:
+    element: Play Episode 4
+    direction: DOWN
+- tapOn: Play Episode 4
+- assertVisible: Episode 4
+- extendedWaitUntil:
+    visible: Pause
+    timeout: 15000
+- tapOn: Pause
+- swipe:
+    start: 1%, 50%
+    end: 90%, 50%
+    duration: 500
+- scrollUntilVisible:
+    element: Play Episode 4
+    direction: DOWN
+- assertNotVisible: Unlock Episode 4
+- waitForAnimationToEnd
+- takeScreenshot: unlocked-details
+- tapOn: Play Episode 4
+- assertVisible: Episode 4
+- tapOn: Home
+- swipe:
+    start: 1%, 50%
+    end: 90%, 50%
+    duration: 500
+- assertVisible: DramaFlash
+- scrollUntilVisible:
+    element: Reset demo
+    direction: DOWN
+- tapOn: Reset demo
+- scrollUntilVisible:
+    element: 15 Coins · Demo wallet
+    direction: UP
+- assertVisible: 15 Coins · Demo wallet

@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+coverage/
+test-results/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+reports/
+.scannerwork/

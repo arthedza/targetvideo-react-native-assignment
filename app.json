@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "DramaFlash",
+    "slug": "dramaflash",
+    "scheme": "dramaflash",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": ["expo-router", "expo-video"],
+    "platforms": ["ios", "android"]
+  }
+}

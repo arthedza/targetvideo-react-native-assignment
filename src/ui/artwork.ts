@@ -1,0 +1,30 @@
+export const artwork = {
+  cast: {
+    mia: require('../../assets/artwork/cast-mia.jpg'),
+    alexander: require('../../assets/artwork/cast-alexander.jpg'),
+    chloe: require('../../assets/artwork/cast-chloe.jpg'),
+    rival: require('../../assets/artwork/cast-rival.jpg'),
+  },
+  avatar: require('../../assets/artwork/avatar.jpg'),
+  posters: [
+    require('../../assets/artwork/poster-1.jpg'),
+    require('../../assets/artwork/poster-2.jpg'),
+    require('../../assets/artwork/poster-3.jpg'),
+    require('../../assets/artwork/poster-4.jpg'),
+    require('../../assets/artwork/poster-5.jpg'),
+    require('../../assets/artwork/poster-6.jpg'),
+    require('../../assets/artwork/poster-7.jpg'),
+    require('../../assets/artwork/poster-8.jpg'),
+    require('../../assets/artwork/poster-9.jpg'),
+  ],
+  series: require('../../assets/artwork/series.jpg'),
+  spotlight: require('../../assets/artwork/spotlight.jpg'),
+  unlock: require('../../assets/artwork/unlock.jpg'),
+  paywall: require('../../assets/artwork/paywall-background.jpg'),
+  episodes: [
+    require('../../assets/artwork/episode-1.jpg'),
+    require('../../assets/artwork/episode-2.jpg'),
+    require('../../assets/artwork/episode-3.jpg'),
+    require('../../assets/artwork/episode-4.jpg'),
+  ],
+};

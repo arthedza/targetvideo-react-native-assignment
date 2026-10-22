@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+coverage/
+test-results/
+package-lock.json
+reports/
+.scannerwork/
